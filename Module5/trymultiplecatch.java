@@ -1,8 +1,8 @@
 public class trymultiplecatch {
 	public static void main(String[] args) {
 		try {
-      String s = null;
-      System.out.println(s.length());
+			String s = null;
+			System.out.println(s.length());
 			System.out.println(5/0);
 		}
 		catch (NullPointerException obj) {
