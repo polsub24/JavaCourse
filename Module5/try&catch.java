@@ -3,7 +3,7 @@ public class Try {
 		try {
 			System.out.println(5/0);
 		}
-		catch (ArithmeticException obj) {
+		catch (Exception obj) {
 			System.out.println("arithmetic exception handled");
 			System.out.println(obj);
 		}
