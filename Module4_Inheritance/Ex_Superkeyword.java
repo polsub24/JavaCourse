@@ -12,7 +12,7 @@ class C1 extends P1{
 		System.out.println("child class constructor");
 	}
 	C1(int j){
-		super();
+		super();//means parent class is called not writing it still includes calling parent class constrcutor
 		System.out.println(j);
 	}
 	int i =10;
@@ -28,7 +28,12 @@ class C1 extends P1{
 }
 public class Ex_Superkeyword {
 	public static void main(String[] args) {
-		 C1 obj = new C1(15);
+		 C1 obj = new C1();
+		 obj.display();
+		 obj.show();
+		 C1 obj1 = new C1(20);
+	}
+}
 		 obj.display();
 		 obj.show();
 	}
