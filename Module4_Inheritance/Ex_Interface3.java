@@ -1,4 +1,4 @@
-interface In1{
+interface In1{// nested inheritance
     void display1();
     interface In2{
         void display2();
