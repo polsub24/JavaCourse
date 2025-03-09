@@ -1,4 +1,4 @@
-interface I1{
+interface I1{// multilevel or hierarhcial inheritance
     void display1();
 }
 interface I2 extends I1{
