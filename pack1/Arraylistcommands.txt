@@ -1,0 +1,9 @@
+creating an array list: ArrayList<String> list = new ArrayList();
+accessing an element: list.get(index);
+.set(index);
+.size()
+.add("london");
+.add(index,"london");
+.remove(index);
+.remove(object);
+.clear();
