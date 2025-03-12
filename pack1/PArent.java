@@ -1,4 +1,3 @@
-package pack1;
 public class PArent {
 	protected void show() {
 		System.out.println("parent");
