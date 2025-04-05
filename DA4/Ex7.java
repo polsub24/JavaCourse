@@ -4,17 +4,18 @@ public class Ex7{
   public static void main (String[] args){
     try{
       File obj = new File("newfile.txt");
-      FileOuputStream fout = new FileOutputStream(obj);
-      DataOutputStream ob = new DataOutpurStream(fout);
+      FileOutputStream fout = new FileOutputStream(obj);
+      DataOutputStream ob = new DataOutputStream(fout);
       ob.writeInt(72);
       ob.writeChar(72);
       ob.writeUTF("Hello");
       ob.writeBoolean(false);
+      ob.writeDouble(5.8);
       System.out.println("written successfully");
       ob.close();
       fout.close();
       FileInputStream fin = new FileInputStream(obj);
-      DataInputStrean ob1 = new DataInputStream(fin);
+      DataInputStream ob1 = new DataInputStream(fin);
       int i = ob1.readInt();
       char c1 = ob1.readChar();
       String s = ob1.readUTF();
