@@ -1,6 +1,6 @@
 package FileHandling;
 import java.io.*;
-public class{
+public class Ex8{
   public static void main(String[] args){
     try{
       File obj = new File("mydata3.txt");
@@ -11,13 +11,12 @@ public class{
       System.out.println("written successfully");
       ob.close();
       fout.close();
-
       FileInputStream fin = new FileInputStream(obj);
       BufferedInputStream ob1 = new BufferedInputStream(fin);
       //int i = ob1.read();
       int i=0;
-      while((i=ob1.read())!=1){
-        System.out.println((char));
+      while((i=ob1.read())!=-1){
+        System.out.print((char)i);
       }
       System.out.println("\nreading completed");
       ob1.close();
